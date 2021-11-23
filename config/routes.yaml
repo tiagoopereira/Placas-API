@@ -1,3 +1,35 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+cliente_index:
+  path: /cliente
+  controller: App\Controller\ClienteController::index
+  methods:
+    - GET
+
+cliente_create:
+  path: /cliente
+  controller: App\Controller\ClienteController::create
+  methods:
+    - POST
+
+cliente_find:
+  path: /cliente/{id}
+  controller: App\Controller\ClienteController::find
+  methods:
+    - GET
+
+cliente_update:
+  path: /cliente/{id}
+  controller: App\Controller\ClienteController::update
+  methods:
+    - PUT
+
+cliente_delete:
+  path: /cliente/{id}
+  controller: App\Controller\ClienteController::delete
+  methods:
+    - DELETE
+
+cliente_consulta_placa:
+  path: /consulta/final-placa/{numero}
+  controller: App\Controller\ClienteController::consultaPlaca
+  methods:
+    - GET

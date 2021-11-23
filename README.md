@@ -1,8 +1,8 @@
 # Placas-API
 ### Execução
-###  Makefile:
+####  Makefile:
     - make run
-### Rodando separadamente
+#### Rodando separadamente
     - composer install (Para instalar as dependências e gerar o arquivo de autoload).
 ##### Utilizando Docker:
     - docker-compose up -d
